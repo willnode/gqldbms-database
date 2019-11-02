@@ -1,0 +1,175 @@
+{
+	"enums": [],
+	"name": "",
+	"objects": [{
+		"description": "",
+		"fields": [{
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "User",
+				"resolver": null
+			},
+			"description": "",
+			"name": "author",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "User"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Post",
+				"resolver": null
+			},
+			"description": "",
+			"name": "feed",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "Post"
+			}
+		}],
+		"name": "Query"
+	}, {
+		"description": "",
+		"fields": [{
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "i32",
+				"resolver": null
+			},
+			"description": " @type as i32; ",
+			"name": "id",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "ID"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "",
+			"name": "username",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Post",
+				"resolver": null
+			},
+			"description": "",
+			"name": "posts",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "Post"
+			}
+		}],
+		"name": "User"
+	}, {
+		"description": "",
+		"fields": [{
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "i32",
+				"resolver": null
+			},
+			"description": " @type as i32; ",
+			"name": "id",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "ID"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "",
+			"name": "title",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "User",
+				"resolver": null
+			},
+			"description": "",
+			"name": "author",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "User"
+			}
+		}],
+		"name": "Post"
+	}, {
+		"description": "",
+		"fields": [{
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Post",
+				"resolver": null
+			},
+			"description": "",
+			"name": "createPost",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "Post"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Post",
+				"resolver": null
+			},
+			"description": "",
+			"name": "updatePost",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "Post"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Post",
+				"resolver": null
+			},
+			"description": "",
+			"name": "deletePost",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "Post"
+			}
+		}],
+		"name": "Mutation"
+	}]
+}

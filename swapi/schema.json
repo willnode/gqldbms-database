@@ -1,0 +1,1392 @@
+{
+	"enums": [{
+		"description": "The eye color of this person. Will be \"UNKNOWN\" if not known or null if the person does not have an eye.\n",
+		"name": "PERSON_EYE_COLOR",
+		"values": {
+			"BLACK": "BLACK",
+			"BLUE": "BLUE",
+			"BLUEGREY": "BLUEGREY",
+			"BROWN": "BROWN",
+			"DARK": "DARK",
+			"GOLD": "GOLD",
+			"GREEN": "GREEN",
+			"HAZEL": "HAZEL",
+			"ORANGE": "ORANGE",
+			"PINK": "PINK",
+			"RED": "RED",
+			"UNKNOWN": "UNKNOWN",
+			"WHITE": "WHITE",
+			"YELLOW": "YELLOW"
+		}
+	}, {
+		"description": "The gender of this person. Will be \"UNKNOWN\" if not known or null if the person does not have a gender.\n",
+		"name": "PERSON_GENDER",
+		"values": {
+			"FEMALE": "FEMALE",
+			"HERMAPHRODITE": "HERMAPHRODITE",
+			"MALE": "MALE",
+			"UNKNOWN": "UNKNOWN"
+		}
+	}, {
+		"description": "The hair color of this person. Will be \"UNKNOWN\" if not known or null if the person does not have hair.\n",
+		"name": "PERSON_HAIR_COLOR",
+		"values": {
+			"AUBURN": "AUBURN",
+			"BLACK": "BLACK",
+			"BLONDE": "BLONDE",
+			"BROWN": "BROWN",
+			"GREY": "GREY",
+			"UNKNOWN": "UNKNOWN",
+			"WHITE": "WHITE"
+		}
+	}, {
+		"description": "The skin color of this person.\n",
+		"name": "PERSON_SKIN_COLOR",
+		"values": {
+			"BLUE": "BLUE",
+			"BROWN": "BROWN",
+			"BROWNMOTTLE": "BROWNMOTTLE",
+			"DARK": "DARK",
+			"FAIR": "FAIR",
+			"GOLD": "GOLD",
+			"GREEN": "GREEN",
+			"GREENTAN": "GREENTAN",
+			"GREY": "GREY",
+			"LIGHT": "LIGHT",
+			"METAL": "METAL",
+			"MOTTLEDGREEN": "MOTTLEDGREEN",
+			"ORANGE": "ORANGE",
+			"PALE": "PALE",
+			"RED": "RED",
+			"SILVER": "SILVER",
+			"TAN": "TAN",
+			"UNKNOWN": "UNKNOWN",
+			"WHITE": "WHITE",
+			"YELLOW": "YELLOW"
+		}
+	}, {
+		"description": "The eye colors for this species, \"UNKNOWN\" if not known, null if this species does not typically have eyes.\n",
+		"name": "SPECIES_EYE_COLOR",
+		"values": {
+			"AMBER": "AMBER",
+			"BLACK": "BLACK",
+			"BLUE": "BLUE",
+			"BROWN": "BROWN",
+			"GOLD": "GOLD",
+			"GOLDEN": "GOLDEN",
+			"GREEN": "GREEN",
+			"GREY": "GREY",
+			"HAZEL": "HAZEL",
+			"INDIGO": "INDIGO",
+			"ORANGE": "ORANGE",
+			"PINK": "PINK",
+			"RED": "RED",
+			"SILVER": "SILVER",
+			"UNKNOWN": "UNKNOWN",
+			"YELLOW": "YELLOW"
+		}
+	}, {
+		"description": "The hair colors for this species, \"UNKNOWN\" if not known, null if this species does not typically have hairs.\n",
+		"name": "SPECIES_HAIR_COLOR",
+		"values": {
+			"BLACK": "BLACK",
+			"BLONDE": "BLONDE",
+			"BROWN": "BROWN",
+			"RED": "RED",
+			"UNKNOWN": "UNKNOWN",
+			"WHITE": "WHITE"
+		}
+	}, {
+		"description": "The skin colors for this species, \"UNKNOWN\" if not known, null if this species does not typically have a skin.\n",
+		"name": "SPECIES_SKIN_COLOR",
+		"values": {
+			"ASIAN": "ASIAN",
+			"BLACK": "BLACK",
+			"BLUE": "BLUE",
+			"BROWN": "BROWN",
+			"CAUCASIAN": "CAUCASIAN",
+			"DARK": "DARK",
+			"GREEN": "GREEN",
+			"GREY": "GREY",
+			"HISPANIC": "HISPANIC",
+			"MAGENTA": "MAGENTA",
+			"ORANGE": "ORANGE",
+			"PALE": "PALE",
+			"PALEPINK": "PALEPINK",
+			"PEACH": "PEACH",
+			"PINK": "PINK",
+			"PURPLE": "PURPLE",
+			"RED": "RED",
+			"TAN": "TAN",
+			"UNKNOWN": "UNKNOWN",
+			"WHITE": "WHITE",
+			"YELLOW": "YELLOW"
+		}
+	}],
+	"name": "",
+	"objects": [{
+		"description": "",
+		"fields": [{
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Film",
+				"resolver": null
+			},
+			"description": "",
+			"name": "allFilms",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "Film"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Person",
+				"resolver": null
+			},
+			"description": "",
+			"name": "allPersons",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "Person"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Planet",
+				"resolver": null
+			},
+			"description": "",
+			"name": "allPlanets",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "Planet"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Species",
+				"resolver": null
+			},
+			"description": "",
+			"name": "allSpecies",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "Species"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Starship",
+				"resolver": null
+			},
+			"description": "",
+			"name": "allStarships",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "Starship"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Vehicle",
+				"resolver": null
+			},
+			"description": "",
+			"name": "allVehicles",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "Vehicle"
+			}
+		}],
+		"name": "Query"
+	}, {
+		"description": "",
+		"fields": [{
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Person",
+				"resolver": null
+			},
+			"description": "",
+			"name": "characters",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "Person"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "",
+			"name": "createdAt",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "The name of the director of this film.\n",
+			"name": "director",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "i32",
+				"resolver": null
+			},
+			"description": "The episode number of this film.\n",
+			"name": "episodeId",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "Int"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "i32",
+				"resolver": null
+			},
+			"description": "@type as i32;\n",
+			"name": "id",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "ID"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "The opening paragraphs at the beginning of this film.\n",
+			"name": "openingCrawl",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Planet",
+				"resolver": null
+			},
+			"description": "",
+			"name": "planets",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "Planet"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "The names of the producers of this film.\n",
+			"name": "producers",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "The ISO 8601 date format of film release at original creator country.\n",
+			"name": "releaseDate",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Species",
+				"resolver": null
+			},
+			"description": "",
+			"name": "species",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "Species"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Starship",
+				"resolver": null
+			},
+			"description": "",
+			"name": "starships",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "Starship"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "The title of this film\n",
+			"name": "title",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "",
+			"name": "updatedAt",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Vehicle",
+				"resolver": null
+			},
+			"description": "",
+			"name": "vehicles",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "Vehicle"
+			}
+		}],
+		"name": "Film"
+	}, {
+		"description": "",
+		"fields": [{
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "The birth year of the person, using the in-universe standard of BBY or ABY -\nBefore the Battle of Yavin or After the Battle of Yavin. The Battle of Yavin\nis a battle that occurs at the end of Star Wars episode IV: A New Hope. \n",
+			"name": "birthYear",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "",
+			"name": "createdAt",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "PERSON_EYE_COLOR",
+				"resolver": null
+			},
+			"description": "The eye color of this person. Will be \"UNKNOWN\" if not known or null if the person does not have an eye.\n",
+			"name": "eyeColor",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "PERSON_EYE_COLOR"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Film",
+				"resolver": null
+			},
+			"description": "",
+			"name": "films",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "Film"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "PERSON_GENDER",
+				"resolver": null
+			},
+			"description": "The gender of this person. Will be \"UNKNOWN\" if not known or null if the person does not have a gender.\n",
+			"name": "gender",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "PERSON_GENDER"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "PERSON_HAIR_COLOR",
+				"resolver": null
+			},
+			"description": "The hair color of this person. Will be \"UNKNOWN\" if not known or null if the person does not have hair.\n",
+			"name": "hairColor",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "PERSON_HAIR_COLOR"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "i32",
+				"resolver": null
+			},
+			"description": "The height of the person in centimeters.\n",
+			"name": "height",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "Int"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Planet",
+				"resolver": null
+			},
+			"description": "",
+			"name": "homeworld",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "Planet"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "i32",
+				"resolver": null
+			},
+			"description": "@type as i32;\n",
+			"name": "id",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "ID"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "f64",
+				"resolver": null
+			},
+			"description": "The mass of the person in kilograms.\n",
+			"name": "mass",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "Float"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "The name of this person.\n",
+			"name": "name",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "PERSON_SKIN_COLOR",
+				"resolver": null
+			},
+			"description": "The skin color of this person.\n",
+			"name": "skinColor",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "PERSON_SKIN_COLOR"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Species",
+				"resolver": null
+			},
+			"description": "",
+			"name": "species",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "Species"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Starship",
+				"resolver": null
+			},
+			"description": "",
+			"name": "starships",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "Starship"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "",
+			"name": "updatedAt",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Vehicle",
+				"resolver": null
+			},
+			"description": "",
+			"name": "vehicles",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "Vehicle"
+			}
+		}],
+		"name": "Person"
+	}, {
+		"description": "A Planet is a large mass, planet or planetoid in the Star Wars Universe, at the time of 0 ABY.\n",
+		"fields": [{
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "The climate of this planet.\n",
+			"name": "climate",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "",
+			"name": "createdAt",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "i32",
+				"resolver": null
+			},
+			"description": "The diameter of this planet in kilometers.\n",
+			"name": "diameter",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "Int"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Film",
+				"resolver": null
+			},
+			"description": "",
+			"name": "films",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "Film"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "A number denoting the gravity of this planet, where \"1\" is normal or 1\nstandard G. \"2\" is twice or 2 standard Gs. \"0.5\" is half or 0.5 standard Gs. \n",
+			"name": "gravity",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "i32",
+				"resolver": null
+			},
+			"description": "@type as i32;\n",
+			"name": "id",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "ID"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "The name of the planet\n",
+			"name": "name",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "i32",
+				"resolver": null
+			},
+			"description": "The number of standard days it takes for this planet to complete a single orbit of its local star.\n",
+			"name": "orbitalPeriod",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "Int"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "f64",
+				"resolver": null
+			},
+			"description": "The average population of sentient beings inhabiting this planet.\n",
+			"name": "population",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "Float"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Person",
+				"resolver": null
+			},
+			"description": "",
+			"name": "residents",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "Person"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "i32",
+				"resolver": null
+			},
+			"description": "The number of standard hours it takes for this planet to complete a single rotation on its axis.\n",
+			"name": "rotationPeriod",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "Int"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "f64",
+				"resolver": null
+			},
+			"description": "The percentage of the planet surface that is naturally occurring water or bodies of water.\n",
+			"name": "surfaceWater",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "Float"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "The terrain of this planet.\n",
+			"name": "terrain",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "",
+			"name": "updatedAt",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}],
+		"name": "Planet"
+	}, {
+		"description": "A Species is a type of person or character within the Star Wars Universe.\n",
+		"fields": [{
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "i32",
+				"resolver": null
+			},
+			"description": "The average height of this species in centimeters.\n",
+			"name": "averageHeight",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "Int"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "i32",
+				"resolver": null
+			},
+			"description": "The average lifespan of this species in years.\n",
+			"name": "averageLifespan",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "Int"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "The classification of this species, such as \"mammal\" or \"reptile\".\n",
+			"name": "classification",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "",
+			"name": "createdAt",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "The designation of this species, such as \"sentient\".\n",
+			"name": "designation",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "SPECIES_EYE_COLOR",
+				"resolver": null
+			},
+			"description": "The eye colors for this species, \"UNKNOWN\" if not known, null if this species does not typically have eyes.\n",
+			"name": "eyeColor",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "SPECIES_EYE_COLOR"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Film",
+				"resolver": null
+			},
+			"description": "",
+			"name": "films",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "Film"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "SPECIES_HAIR_COLOR",
+				"resolver": null
+			},
+			"description": "The hair colors for this species, \"UNKNOWN\" if not known, null if this species does not typically have hairs.\n",
+			"name": "hairColor",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "SPECIES_HAIR_COLOR"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "i32",
+				"resolver": null
+			},
+			"description": "@type as i32;\n",
+			"name": "id",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "ID"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "The language commonly spoken by this species.\n",
+			"name": "language",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "The name of this species.\n",
+			"name": "name",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Person",
+				"resolver": null
+			},
+			"description": "",
+			"name": "people",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "Person"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "SPECIES_SKIN_COLOR",
+				"resolver": null
+			},
+			"description": "The skin colors for this species, \"UNKNOWN\" if not known, null if this species does not typically have a skin.\n",
+			"name": "skinColor",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "SPECIES_SKIN_COLOR"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "",
+			"name": "updatedAt",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}],
+		"name": "Species"
+	}, {
+		"description": "A Starship is a single transport craft that has hyperdrive capability.\n",
+		"fields": [{
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "f64",
+				"resolver": null
+			},
+			"description": "The class of this starships hyperdrive.\n",
+			"name": "hyperdriveRating",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "Float"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "i32",
+				"resolver": null
+			},
+			"description": "@type as i32;\n",
+			"name": "id",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "ID"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "The manufacturer of this starship.\n",
+			"name": "manufacturer",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "i32",
+				"resolver": null
+			},
+			"description": "The Maximum number of Megalights this starship can travel in a standard hour.\nA \"Megalight\" is a standard unit of distance and has never been defined before\nwithin the Star Wars universe. \n",
+			"name": "mglt",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "Int"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Transport",
+				"resolver": null
+			},
+			"description": "",
+			"name": "transport",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "Transport"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "",
+			"name": "starshipClass",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}],
+		"name": "Starship"
+	}, {
+		"description": "A Vehicle or A starship characteristics\n",
+		"fields": [{
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "i32",
+				"resolver": null
+			},
+			"description": "The maximum number of kilograms that this vehicle can transport.\n",
+			"name": "cargoCapacity",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "Int"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "The class of this vehicle, such as \"Wheeled\" or \"Repulsorcraft\".\n",
+			"name": "class",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "The maximum length of time that this vehicle can provide consumables for its entire crew without having to resupply.\n",
+			"name": "consumables",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "i32",
+				"resolver": null
+			},
+			"description": "The cost of this vehicle new, in Galactic Credits.\n",
+			"name": "costInCredits",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "Int"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "",
+			"name": "createdAt",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "i32",
+				"resolver": null
+			},
+			"description": "The number of personnel needed to run or pilot this vehicle.\n",
+			"name": "crew",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "Int"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "i32",
+				"resolver": null
+			},
+			"description": "@type as i32;\n",
+			"name": "id",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "ID"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "f64",
+				"resolver": null
+			},
+			"description": "The length of this vehicle in meters.\n",
+			"name": "length",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "Float"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "The manufacturer of this vehicle.\n",
+			"name": "manufacturer",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "i32",
+				"resolver": null
+			},
+			"description": "The maximum speed of this vehicle in the atmosphere.\n",
+			"name": "maxAtmospheringSpeed",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "Int"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "The model or official name of this vehicle. Such as \"All-Terrain Attack Transport\".\n",
+			"name": "model",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "The name of this vehicle. The common name, such as \"Sand Crawler\" or \"Speeder bike\".\n",
+			"name": "name",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "i32",
+				"resolver": null
+			},
+			"description": "The number of non-essential people this vehicle can transport.\n",
+			"name": "passengers",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": true,
+				"name": "Int"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "",
+			"name": "updatedAt",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}],
+		"name": "Transport"
+	}, {
+		"description": "A Vehicle is a single transport craft that does not have hyperdrive capability.\n",
+		"fields": [{
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "i32",
+				"resolver": null
+			},
+			"description": "@type as i32;\n",
+			"name": "id",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "ID"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Person",
+				"resolver": null
+			},
+			"description": "",
+			"name": "pilots",
+			"return_type": {
+				"is_array": true,
+				"is_nullable": false,
+				"name": "Person"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "string",
+				"resolver": null
+			},
+			"description": "",
+			"name": "vehicleClass",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "String"
+			}
+		}, {
+			"data_type": {
+				"backreference": null,
+				"default": null,
+				"kind": "Transport",
+				"resolver": null
+			},
+			"description": "",
+			"name": "transport",
+			"return_type": {
+				"is_array": false,
+				"is_nullable": false,
+				"name": "Transport"
+			}
+		}],
+		"name": "Vehicle"
+	}]
+}
